@@ -1,5 +1,5 @@
 public class Main {
-    public static void leapYear() {
+    public static void initLeapYear() {
         int year = 2021;
         if ((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0))) {
             System.out.println(year + " является високосным");
@@ -30,7 +30,7 @@ public class Main {
     }
     public static void task1() {
         System.out.println("Задача 1");
-        leapYear();
+        initLeapYear();
     }
 
     public static void task2() {
