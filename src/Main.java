@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Main {
     public static void initLeapYear() {
         int year = 2021;
@@ -37,6 +38,7 @@ public class Main {
         task2();
         task3();
     }
+
     public static void task1() {
         System.out.println("Задача 1");
         initLeapYear();
