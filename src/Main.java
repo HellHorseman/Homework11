@@ -68,7 +68,7 @@ public class Main {
         }
     }
 
-    public static void task3() {
+    public static int task3() {
         System.out.println("Задача 3");
         int deliveryDistance = deliveryDistance();
         int days = 1;
@@ -83,5 +83,6 @@ public class Main {
         } else {
             System.out.println("Доставки нет");
         }
+        return days;
     }
 }
