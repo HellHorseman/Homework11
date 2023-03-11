@@ -1,13 +1,11 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void initLeapYear() {
-        int year = 2021;
-        if ((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0))) {
-            System.out.println(year + " является високосным");
-        } else {
-            System.out.println(year + " не является високосным");
-        }
+    public static int initLeapYear() {
+        Scanner scanner1 = new Scanner(System.in);
+        System.out.println("Укажите интересующий Вас год");
+        int year = scanner1.nextInt();
+        return year;
     }
 
     public static void checkDevice() {
@@ -40,8 +38,13 @@ public class Main {
     }
 
     public static void task1() {
-        System.out.println("Задача 1");
-        initLeapYear();
+        System.out.println("Задача 1");1
+        int year = initLeapYear();
+        if ((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0))) {
+            System.out.println(year + " является високосным");
+        } else {
+            System.out.println(year + " не является високосным");
+        }
     }
 
     public static void task2() {
